@@ -85,30 +85,30 @@ Deposits and withdrawals are also recorded as transactions so that savings activ
 
 ```text
 pennywise/
-├── main.py                         # Entry point; MainWindow connects all screens
-├── style.qss                       # Custom stylesheet (Pennywise Dark Theme)
+├── main.py                         
+├── style.qss                       
 ├── database/
-│   ├── database.py                 # SQLite connection manager & table schema creation
-│   └── pennywise.db                # Local SQLite database file
+│   ├── database.py                 
+│   └── pennywise.db                
 └── features/
-    ├── dashboard/                  # KPI overview and summary insights
-    │   ├── service.py              # Financial logic and aggregation
-    │   └── view.py                 # Summary cards, charts, and activity log
-    ├── transactions/               # Transaction logging, searching, and filtering
-    │   ├── model.py                # Transaction dataclass
-    │   ├── repository.py           # SQL queries for transaction records
-    │   ├── service.py              # Business logic & validation for transactions
-    │   └── view.py                 # Transaction log table & entry form
-    ├── budget/                     # Budget limit tracking & progress indicators
-    │   ├── model.py                # Budget dataclass
-    │   ├── repository.py           # SQL queries for budget records
-    │   ├── service.py              # Budget usage calculations and alert logic
-    │   └── view.py                 # Category budget limit form & progress bars
-    └── savings_account/            # Savings Vault operations & ledger integration
-        ├── model.py                # SavingsGoal dataclass
-        ├── repository.py           # SQL queries for savings records
-        ├── service.py              # Deposit/withdrawal rules & transaction sync
-        └── view.py                 # Savings goals list & vault controls
+    ├── dashboard/                  
+    │   ├── service.py              
+    │   └── view.py                 
+    ├── transactions/               
+    │   ├── model.py                
+    │   ├── repository.py           
+    │   ├── service.py               
+    │   └── view.py                
+    ├── budget/                     
+    │   ├── model.py                
+    │   ├── repository.py           
+    │   ├── service.py              
+    │   └── view.py                
+    └── savings_account/            
+        ├── model.py               
+        ├── repository.py          
+        ├── service.py            
+        └── view.py                
 ```
 
 ### Main Components
@@ -332,10 +332,6 @@ The system performs database operations for adding, retrieving, updating, and de
 ---
 
 ## 9. Screenshots
-
-Screenshots should be placed in a `screenshots/` folder in the GitHub repository.
-
-Recommended screenshots include:
 
 ```text
 screenshots/
