@@ -1,6 +1,6 @@
-# PennyWise: Personal Finance Tracker
+# PennyWise: Personal Budget Tracker
 
-PennyWise is a desktop-based personal finance management system developed to help users record, organize, and monitor their personal finances in one application. The system allows users to manage income and expenses, set category-based budget limits, create savings goals, and view financial summaries through a graphical interface.
+PennyWise is a desktop-based personal budget management system developed to help users record, organize, and monitor their personal finances in one application. The system allows users to manage income and expenses, set category-based budget limits, create savings goals, and view financial summaries through a graphical interface.
 
 The project uses Python with PyQt6 for the graphical user interface and SQLite for local data storage. Its main purpose is to provide a simple and organized way of managing financial records without requiring an online account or cloud-based service.
 
@@ -86,12 +86,12 @@ Deposits and withdrawals are also recorded as transactions so that savings activ
 ```text
 pennywise/
 ├── main.py                         # Entry point; MainWindow connects all screens
-├── style.qss                       # Custom stylesheet (Pennywise Dark Theme)
+├── style.qss                       # Custom stylesheet
 ├── database/
 │   ├── database.py                 # SQLite connection manager & table schema creation
 │   └── pennywise.db                # Local SQLite database file
 └── features/
-    ├── dashboard/                  # KPI overview and summary insights
+    ├── dashboard/                  # Overview and summary insights
     │   ├── service.py              # Financial logic and aggregation
     │   └── view.py                 # Summary cards, charts, and activity log
     ├── transactions/               # Transaction logging, searching, and filtering
@@ -379,9 +379,6 @@ Testing was performed by checking the main functions of the application and obse
 | Savings             | Withdraw from a goal              | Savings amount decreases and a savings transaction is recorded |
 | Savings             | Withdraw more than available      | Withdrawal is rejected                                         |
 | Dashboard           | Refresh financial records         | Summary information is recalculated                            |
-
-Actual test results should be recorded based on the final execution of the submitted version of the project.
-
 ---
 
 ## 11. Known Issues / Limitations
