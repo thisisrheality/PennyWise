@@ -1,0 +1,492 @@
+/* ===================================================================
+   PennyWise - Dark Carnival Theme
+   Obsidian Base / Crimson Branding / Neon Accent Colors
+   =================================================================== */
+
+QWidget {
+    background-color: #07080D;
+    color: #F1F5F9;
+    font-family: 'Courier New', 'Consolas', monospace;
+    font-size: 13px;
+}
+
+QLabel {
+    background: transparent;
+    border: none;
+}
+
+/* ===================================================================
+   BACKGROUND
+   =================================================================== */
+
+QStackedWidget {
+    background-color: #07080D;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'><ellipse cx='70' cy='52' rx='18' ry='23' fill='%23FF1F35' opacity='0.055'/><path d='M70 75 L67 79 L73 79 Z' fill='%23FF1F35' opacity='0.055'/><path d='M70 79 Q62 97 71 113' stroke='%23FF1F35' stroke-width='1.5' fill='none' opacity='0.035'/></svg>");
+    background-position: top left;
+    background-repeat: repeat;
+}
+
+/* ===================================================================
+   SIDEBAR
+   =================================================================== */
+
+#sidebar {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:1,
+        stop:0 #15101C,
+        stop:0.45 #0D101B,
+        stop:1 #07080D
+    );
+    border-right: 1px solid #39233F;
+}
+
+#appTitle {
+    font-family: 'Chiller', 'Creepster', 'Impact', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #FF2438;
+    letter-spacing: 2px;
+}
+
+#appSubtitle {
+    font-family: 'Courier New', monospace;
+    font-size: 9px;
+    font-weight: 700;
+    color: #C084FC;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+#navButton {
+    background-color: #10131F;
+    color: #AAB4C5;
+    text-align: left;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    border: 1px solid #252D40;
+}
+
+#navButton:hover {
+    background-color: #1B1830;
+    color: #FFFFFF;
+    border: 1px solid #674C91;
+}
+
+#navButton:checked {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #42245C,
+        stop:0.55 #272348,
+        stop:1 #17253D
+    );
+    color: #FFFFFF;
+    border: 1px solid #A855F7;
+}
+
+/* ===================================================================
+   HEADER
+   =================================================================== */
+
+#viewHeaderBar {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #171525,
+        stop:0.5 #101522,
+        stop:1 #0A0D15
+    );
+    border-radius: 8px;
+    border: 1px solid #303750;
+    border-top: 2px solid #8B3040;
+}
+
+#viewHeaderTitle {
+    font-family: 'Chiller', 'Impact', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: #FFFFFF;
+    letter-spacing: 1.5px;
+}
+
+#headerLabel {
+    color: #AAB4C5;
+    font-weight: 700;
+}
+
+#statusBadge {
+    background-color: #211A38;
+    color: #D8B4FE;
+    border: 1px solid #8B5CF6;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 10px;
+    font-weight: 800;
+    font-family: 'Impact', sans-serif;
+}
+
+/* ===================================================================
+   CARDS
+   =================================================================== */
+
+#cardFrame,
+#card {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:0, y2:1,
+        stop:0 #151927,
+        stop:0.5 #10131E,
+        stop:1 #090B12
+    );
+    border-radius: 8px;
+    border: 1px solid #30374A;
+    border-top: 2px solid #713445;
+}
+
+#innerInsightCard {
+    background-color: #101522;
+    border: 1px solid #29334A;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+#quoteCard {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #32172B,
+        stop:0.5 #21172F,
+        stop:1 #111421
+    );
+    border-radius: 8px;
+    border: 1px solid #633B68;
+    border-left: 4px solid #FF3855;
+}
+
+#quoteText {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-style: italic;
+    color: #F0C7E8;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#sectionHeader {
+    font-family: 'Impact', 'Chiller', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    color: #D8B4FE;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+#subText {
+    color: #7F8CA3;
+    font-size: 11px;
+}
+
+#emptyStateLabel {
+    color: #7F8CA3;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 8px 0px;
+}
+
+#sectionDivider {
+    background-color: #2B3347;
+    max-height: 1px;
+}
+
+/* ===================================================================
+   KPI TILES
+   =================================================================== */
+
+#kpiTile {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:0, y2:1,
+        stop:0 #181D2D,
+        stop:1 #0C0F18
+    );
+    border-radius: 8px;
+    border: 1px solid #30394F;
+    border-top: 2px solid #53617D;
+}
+
+#kpiHeader {
+    font-family: 'Impact', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #AAB4C5;
+    letter-spacing: 1px;
+}
+
+#kpiValBalance {
+    font-size: 19px;
+    font-weight: 900;
+    color: #22D3EE;
+}
+
+#kpiValIncome {
+    font-size: 19px;
+    font-weight: 900;
+    color: #4ADE80;
+}
+
+#kpiValExpense {
+    font-size: 19px;
+    font-weight: 900;
+    color: #FF4054;
+}
+
+#kpiValSavings {
+    font-size: 19px;
+    font-weight: 900;
+    color: #FBBF24;
+}
+
+#kpiDesc {
+    font-size: 9px;
+    color: #718096;
+}
+
+/* ===================================================================
+   FORM INPUTS
+   =================================================================== */
+
+QLineEdit,
+QComboBox,
+QDateEdit {
+    background-color: #0B0F19;
+    border: 1px solid #30394D;
+    border-radius: 6px;
+    padding: 6px 10px;
+    color: #F8FAFC;
+    font-family: 'Courier New', monospace;
+    selection-background-color: #5B21B6;
+}
+
+QLineEdit:hover,
+QComboBox:hover,
+QDateEdit:hover {
+    border: 1px solid #53627D;
+}
+
+QLineEdit:focus,
+QComboBox:focus,
+QDateEdit:focus {
+    border: 1px solid #A855F7;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+/* ===================================================================
+   DIALOGS
+   =================================================================== */
+
+QDialog,
+QMessageBox {
+    background-color: #10131F;
+    border: 1px solid #493A61;
+    border-radius: 8px;
+}
+
+QMessageBox QLabel {
+    color: #F8FAFC;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    background: transparent;
+}
+
+QMessageBox QPushButton {
+    min-width: 90px;
+    padding: 8px 16px;
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #7139A5,
+        stop:1 #3D4C86
+    );
+    color: #FFFFFF;
+    border: 1px solid #A855F7;
+    border-radius: 4px;
+    font-family: 'Impact', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+QMessageBox QPushButton:hover {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #9146D4,
+        stop:1 #5366AD
+    );
+}
+
+/* ===================================================================
+   BUTTONS
+   =================================================================== */
+
+QPushButton {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-family: 'Impact', sans-serif;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border: none;
+}
+
+#primaryButton {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #8B3FB8,
+        stop:0.5 #5B4DA1,
+        stop:1 #315C9B
+    );
+    color: #FFFFFF;
+    border: 1px solid #B477E5;
+}
+
+#primaryButton:hover {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #A94BDB,
+        stop:0.5 #7060C0,
+        stop:1 #3F78C5
+    );
+    border: 1px solid #D0A0F4;
+}
+
+#secondaryButton {
+    background-color: #171C29;
+    color: #E2E8F0;
+    border: 1px solid #354057;
+}
+
+#secondaryButton:hover {
+    background-color: #222A3C;
+    color: #FFFFFF;
+    border: 1px solid #586B8D;
+}
+
+#dangerButton {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #4A1823,
+        stop:1 #291524
+    );
+    color: #FF9EAA;
+    border: 1px solid #9E3D50;
+}
+
+#dangerButton:hover {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #762536,
+        stop:1 #451C35
+    );
+    color: #FFFFFF;
+    border: 1px solid #E05267;
+}
+
+/* ===================================================================
+   TABLES
+   =================================================================== */
+
+QTableWidget {
+    background-color: #0B0F18;
+    border: 1px solid #30394D;
+    border-radius: 6px;
+    gridline-color: #1D2535;
+    color: #F1F5F9;
+    font-family: 'Courier New', monospace;
+    alternate-background-color: #101521;
+}
+
+QTableWidget::item {
+    padding: 6px;
+}
+
+QTableWidget::item:hover {
+    background-color: #182037;
+}
+
+QTableWidget::item:selected {
+    background-color: #492C63;
+    color: #FFFFFF;
+}
+
+QHeaderView::section {
+    background-color: #151A28;
+    color: #B8C2D3;
+    padding: 8px;
+    font-family: 'Impact', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    border: none;
+    border-bottom: 1px solid #30394D;
+}
+
+/* ===================================================================
+   PROGRESS BARS
+   =================================================================== */
+
+QProgressBar {
+    background-color: #0B0F18;
+    border-radius: 3px;
+    text-align: center;
+    color: #F8FAFC;
+    font-size: 9px;
+    font-weight: 700;
+    border: 1px solid #30394D;
+}
+
+QProgressBar#pbarNormal::chunk {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #6366F1,
+        stop:1 #A855F7
+    );
+    border-radius: 3px;
+}
+
+QProgressBar#pbarWarning::chunk {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #F97316,
+        stop:1 #FBBF24
+    );
+    border-radius: 3px;
+}
+
+QProgressBar#pbarDanger::chunk {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #E11D48,
+        stop:1 #FF4D61
+    );
+    border-radius: 3px;
+}
+
+QProgressBar#pbarSuccess::chunk {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:1, y2:0,
+        stop:0 #059669,
+        stop:1 #4ADE80
+    );
+    border-radius: 3px;
+}
