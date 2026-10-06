@@ -333,31 +333,27 @@ The system performs database operations for adding, retrieving, updating, and de
 
 ## 9. Screenshots
 
-Screenshots should be placed in a `screenshots/` folder in the GitHub repository.
-
-Recommended screenshots include:
-
-```text
-screenshots/
-├── dashboard.png
-├── transactions.png
-├── budgets.png
-└── savings.png
-```
-
 ### Dashboard
+
+![PennyWise Dashboard](screenshots/dashboard.png)
 
 Shows the main financial summary, including KPI information, charts, savings information, and recent activity.
 
 ### Transactions
 
+![PennyWise Transactions](screenshots/transactions.png)
+
 Shows the transaction table and the controls for adding, editing, deleting, searching, and filtering transaction records.
 
 ### Budget Limits
 
+![PennyWise Budget Limits](screenshots/budgets.png)
+
 Shows category budget limits, usage information, remaining amounts, and progress indicators.
 
 ### Savings Vault
+
+![PennyWise Savings Vault](screenshots/savings.png)
 
 Shows savings goals, target amounts, current savings, progress, and vault controls.
 
